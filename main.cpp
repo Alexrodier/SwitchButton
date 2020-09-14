@@ -16,10 +16,10 @@ void setup() {
 void doAction() {
   if(ledIsOn){
     digitalWrite (PIN_LED, HIGH);	// turn on the LED
-    ledIsOn = 0;
+    ledIsOn = false;
   }else{
     digitalWrite (PIN_LED, LOW);	// turn on the LED
-    ledIsOn = 1;
+    ledIsOn = true;
   }
 }
 
