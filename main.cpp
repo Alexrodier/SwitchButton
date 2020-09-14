@@ -7,10 +7,10 @@ bool ledIsOn = false;
 bool buttonReleased = false;
 
 void setup() {
+  // put your setup code here, to run once:
   Serial.begin(9600);
   pinMode (PIN_LED, OUTPUT);
   pinMode (PIN_BUTTON, INPUT);
-  // put your setup code here, to run once:
 }
 
 void doAction() {
@@ -18,7 +18,7 @@ void doAction() {
     digitalWrite (PIN_LED, HIGH);	// turn on the LED
     ledIsOn = false;
   }else{
-    digitalWrite (PIN_LED, LOW);	// turn on the LED
+    digitalWrite (PIN_LED, LOW);	// turn off the LED
     ledIsOn = true;
   }
 }
